@@ -109,6 +109,7 @@ nav {
   cursor: pointer;
   text-decoration: none;
   transition: background-position 0.4s, transform 0.2s;
+  animation: shimmer 3s linear infinite;
 }
 
 .nav-btn:hover {
@@ -239,11 +240,16 @@ nav {
 
 .hero-subtitle {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(16px, 2.5vw, 22px);
   font-style: italic;
-  font-weight: 300;
-  color: rgba(255,255,255,0.45);
-  letter-spacing: 0.12em;
+  font-weight: 400;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-bright) 40%, var(--gold-light) 60%, var(--gold) 100%);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+  letter-spacing: 0.15em;
   margin: 40px 0 20px;
 }
 
@@ -319,8 +325,8 @@ nav {
 }
 
 .btn-gold {
-  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-bright) 50%, var(--gold) 100%);
-  background-size: 200% auto;
+  background: linear-gradient(135deg, #8B6914 0%, var(--gold) 25%, var(--gold-bright) 50%, var(--gold) 75%, #8B6914 100%);
+  background-size: 300% auto;
   color: var(--black);
   border: none;
   padding: 16px 44px;
@@ -332,15 +338,17 @@ nav {
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  transition: background-position 0.4s, transform 0.2s;
+  animation: shimmer 3s linear infinite;
+  transition: transform 0.2s;
 }
 
-.btn-gold:hover { background-position: right center; transform: translateY(-2px); }
+.btn-gold:hover { transform: translateY(-2px); }
 
 .btn-outline {
-  background: transparent;
+  background: linear-gradient(135deg, transparent 0%, rgba(201,153,58,0.15) 50%, transparent 100%);
+  background-size: 300% auto;
   color: var(--gold-light);
-  border: 1px solid var(--border);
+  border: 1px solid var(--gold);
   padding: 16px 44px;
   font-family: 'Montserrat', sans-serif;
   font-size: 11px;
@@ -350,10 +358,11 @@ nav {
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  transition: all 0.2s;
+  animation: shimmer 3s linear infinite;
+  transition: transform 0.2s;
 }
 
-.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+.btn-outline:hover { transform: translateY(-2px); border-color: var(--gold-bright); }
 
 /* SECTIONS */
 section { padding: 100px 48px; }
