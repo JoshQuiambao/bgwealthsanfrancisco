@@ -467,10 +467,16 @@ section { padding: 100px 48px; }
 .tickets { background: var(--black); }
 
 .ticket-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   margin-top: 48px;
+  justify-content: center;
+}
+
+.ticket-card {
+  flex: 1 1 300px;
+  max-width: 360px;
 }
 
 .ticket-card {
@@ -1349,7 +1355,52 @@ footer {
         </ul>
         <a href="mailto:julesprestigeproductions@gmail.com?subject=Ticket%20Purchase%20-%20Stage%20of%20Destiny" class="btn-gold" style="width:100%;text-align:center;display:block;">Reserve My Seat</a>
       </div>
+<!-- $250 - Patron Sponsor -->
+<div class="ticket-card">
+  <div class="ticket-type">Patron Sponsor</div>
+  <div class="ticket-price"><sup>$</sup>250</div>
+  <div class="ticket-desc">Elevate your evening with VIP access and recognition for your generous support.</div>
+  <ul class="ticket-perks">
+    <li>1 VIP Ticket</li>
+    <li>Exclusive VIP Wine on the table</li>
+    <li>Best Seats in the House</li>
+    <li>Name Recognition in all printed &amp; promotional materials</li>
+    <li>Credit/Live Acknowledgment within the venue</li>
+    <li>Photo op with the artists</li>
+  </ul>
+  <a href="mailto:julesprestigeproductions@gmail.com?subject=Patron%20Sponsor%20-%20Stage%20of%20Destiny" class="btn-gold" style="width:100%;text-align:center;display:block;">Become a Patron Sponsor</a>
+</div>
 
+<!-- $500 - Ruby Sponsor -->
+<div class="ticket-card">
+  <div class="ticket-type">Ruby Sponsor</div>
+  <div class="ticket-price"><sup>$</sup>500</div>
+  <div class="ticket-desc">Premium access for two with exclusive recognition and a photo moment to remember.</div>
+  <ul class="ticket-perks">
+    <li>2 VIP Tickets</li>
+    <li>Best Seats in the House</li>
+    <li>Name Recognition in all printed &amp; promotional materials</li>
+    <li>Credit/Live Acknowledgment within the venue</li>
+    <li>Photo op with the artists</li>
+  </ul>
+  <a href="mailto:julesprestigeproductions@gmail.com?subject=Ruby%20Sponsor%20-%20Stage%20of%20Destiny" class="btn-gold" style="width:100%;text-align:center;display:block;">Become a Ruby Sponsor</a>
+</div>
+
+<!-- $1,000 - Bronze Sponsor -->
+<div class="ticket-card">
+  <div class="ticket-type">Bronze Sponsor</div>
+  <div class="ticket-price"><sup>$</sup>1,000</div>
+  <div class="ticket-desc">Bring your group and enjoy premium VIP access with wine and maximum visibility.</div>
+  <ul class="ticket-perks">
+    <li>5 VIP Tickets</li>
+    <li>Exclusive VIP Wine on the table</li>
+    <li>Best Seats in the House</li>
+    <li>Name Recognition in all printed &amp; promotional materials</li>
+    <li>Credit/Live Acknowledgment within the venue</li>
+    <li>Photo op with the artists</li>
+  </ul>
+  <a href="mailto:julesprestigeproductions@gmail.com?subject=Bronze%20Sponsor%20-%20Stage%20of%20Destiny" class="btn-gold" style="width:100%;text-align:center;display:block;">Become a Bronze Sponsor</a>
+</div>
      <div class="ticket-card">
         <div class="ticket-type">Silver Sponsor</div>
         <div class="ticket-price"><sup>$</sup>2,000</div>
